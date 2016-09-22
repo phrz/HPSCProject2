@@ -50,7 +50,11 @@ int main(int argc, const char * argv[]) {
 		// find x-hat using the linear solver with A and b.
 		
 		try {
-			Vector xHat = Matrix::linearSolve(A, b);
+			// Copy A and b as they will be modified but we need
+			// the originals for error calculation
+			Vector bTemp = b;
+			Matrix ATemp = A;
+			Vector xHat = Matrix::linearSolve(ATemp, bTemp);
 			
 			// print the 2-norm of the error vector and the residual vector
 			Vector errorVector = Vector(n);

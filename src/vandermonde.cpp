@@ -6,8 +6,6 @@
 //  Copyright © 2016 Paul Herz. All rights reserved.
 //
 
-#include <iostream>
-
 #include "Matrix.h"
 #include "Vector.h"
 #include "println.cpp"

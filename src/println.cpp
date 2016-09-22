@@ -1,5 +1,8 @@
 // [CITE] http://coliru.stacked-crooked.com/a/92a50828d6cb6f01
 
+#ifndef _PRINTLN_CPP_
+#define _PRINTLN_CPP_
+
 #include <iostream>
 
 template<typename T>
@@ -20,3 +23,5 @@ template<>
 void println() {
 	std::cout << std::endl;
 }
+
+#endif

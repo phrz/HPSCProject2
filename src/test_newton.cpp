@@ -28,12 +28,11 @@ int main(int argc, const char * argv[]) {
 	// and determine a root approximation for a given function
 	// using its derivative with given tolerance and iteration limit.
 	
-	size_t maxit = 1000000;
-	double tol = 1e-5;
+	size_t iterationLimit = 1000000;
+	double tolerance = 1e-5;
 	
-//	double x = bisection(f, a, b, maxit, tol, true);
-	double x_0 = 1;
-	double x = newton(f, df, x_0, maxit, tol, true);
+	double initialGuess = 1;
+	double x = newton(f, df, initialGuess, iterationLimit, tolerance, true);
 	
 	println("The approximate root is", x);
 	

@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27658F531D941A30009B34AF /* println.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = println.cpp; path = src/println.cpp; sourceTree = "<group>"; };
 		27AF39761D93534100327B55 /* proj2_a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = proj2_a; sourceTree = BUILT_PRODUCTS_DIR; };
 		27EEB5F61D93541F00D90ECB /* Matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Matrix.cpp; path = lib/Matrix.cpp; sourceTree = "<group>"; };
 		27EEB5F71D93541F00D90ECB /* Vector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Vector.cpp; path = lib/Vector.cpp; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		27EEB6001D93544000D90ECB /* src */ = {
 			isa = PBXGroup;
 			children = (
+				27658F531D941A30009B34AF /* println.cpp */,
 				27EEB6011D93548C00D90ECB /* vandermonde.cpp */,
 			);
 			name = src;

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2747EF861DA3E0EB0017A41E /* kepler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E87F1DA2F30800AAB263 /* kepler.cpp */; };
+		2747EF891DA3EB1B0017A41E /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27EEB5F71D93541F00D90ECB /* Vector.cpp */; };
 		27658F671D945092009B34AF /* test_newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27658F651D945067009B34AF /* test_newton.cpp */; };
-		27EEB5F81D93541F00D90ECB /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27EEB5F61D93541F00D90ECB /* Matrix.cpp */; };
 		27EEB5F91D93541F00D90ECB /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27EEB5F71D93541F00D90ECB /* Vector.cpp */; };
 		27EEB6021D93548C00D90ECB /* vandermonde.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27EEB6011D93548C00D90ECB /* vandermonde.cpp */; };
 /* End PBXBuildFile section */
@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		2747EF7F1DA3E0D10017A41E /* proj2_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = proj2_c; sourceTree = BUILT_PRODUCTS_DIR; };
+		2747EF8A1DA3EEFA0017A41E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		27658F531D941A30009B34AF /* println.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = println.cpp; path = src/println.cpp; sourceTree = "<group>"; };
 		27658F561D944DF4009B34AF /* newton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = newton.cpp; path = src/newton.cpp; sourceTree = "<group>"; };
 		27658F5C1D94503A009B34AF /* proj2_b */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = proj2_b; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +91,7 @@
 		27AF396D1D93534000327B55 = {
 			isa = PBXGroup;
 			children = (
+				2747EF8A1DA3EEFA0017A41E /* Makefile */,
 				27EEB6001D93544000D90ECB /* src */,
 				27EEB5FA1D93542900D90ECB /* lib */,
 				27AF39771D93534100327B55 /* Products */,
@@ -236,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2747EF891DA3EB1B0017A41E /* Vector.cpp in Sources */,
 				2747EF861DA3E0EB0017A41E /* kepler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27EEB6021D93548C00D90ECB /* vandermonde.cpp in Sources */,
-				27EEB5F81D93541F00D90ECB /* Matrix.cpp in Sources */,
 				27EEB5F91D93541F00D90ECB /* Vector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -63,10 +63,10 @@ $(TARGETC):
 all_data: data_a data_b data_c
 
 data_a: $(TARGETA)
-	cd $(BIN); ./$(TARGETA) > $(DATA)a_out.txt
+	cd $(BIN); ./$(TARGETA) > $(ROOT)$(DATA)a_out.txt
 
 data_b: $(TARGETB)
-	cd $(BIN); ./$(TARGETB) > $(DATA)b_out.txt
+	cd $(BIN); ./$(TARGETB) > $(ROOT)$(DATA)b_out.txt
 
 data_c: $(TARGETC)
 	cd $(BIN); ./$(TARGETC)

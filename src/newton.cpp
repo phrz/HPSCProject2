@@ -7,6 +7,7 @@
 //
 
 #include "println.cpp"
+#include <cmath>
 
 using Fcn = std::function<double(double)>;
 

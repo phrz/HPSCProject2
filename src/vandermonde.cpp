@@ -50,8 +50,8 @@ int main(int argc, const char * argv[]) {
 		try {
 			// Copy A and b as they will be modified but we need
 			// the originals for error calculation
-			Vector bTemp = b;
-			Matrix ATemp = A;
+			auto bTemp = Vector(b);
+			auto ATemp = Matrix(A);
 			Vector xHat = Matrix::linearSolve(ATemp, bTemp);
 			
 			// print the 2-norm of the error vector and the residual vector
@@ -60,7 +60,7 @@ int main(int argc, const char * argv[]) {
 				element = std::abs( xHat[i] - x[i] );
 			});
 			
-			Vector residualVector = (A * xHat) - b;
+			Vector residualVector = b - (A * xHat);
 			
 			println("  • Error vector 2-norm:", Vector::norm(errorVector));
 			println("  • Residual vector 2-norm:", Vector::norm(residualVector));

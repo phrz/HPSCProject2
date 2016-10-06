@@ -28,19 +28,19 @@ double eccentricity(double a, double b) {
 }
 
 double r(double ω, double a, double b) {
-	return (a*b) / sqrt( pow(b*cos(ω),2) + pow(a*sin(ω),2) );
+	return ( (a*b) / sqrt( pow(b*cos(ω),2) + pow(a*sin(ω),2)) );
 }
 
 // nonlinear root-finding function to solve
 // Kepler's for ω
 double f(double ω, double t, double ε) {
-	//  0 = t + ε sin(ω) + ω
-	return (t + (ε * sin(ω)) + ω);
+	//  0 = ε sin(ω) - ω - t
+	return ((ε * sin(ω)) - ω - t);
 }
 
 double f1(double ω, double ε) {
-	//  0 = ε cos(ω)
-	return (ε * cos(ω));
+	//  0 = ε cos(ω) - 1
+	return (ε * cos(ω) - 1.0);
 }
 
 int main(int argc, const char * argv[]) {
@@ -59,15 +59,13 @@ int main(int argc, const char * argv[]) {
 	
 	// For each time t = {0, 0.001, ... , 10}:
 	auto tSpace = Vector::linSpace(0, 10, timeSpaceSize);
-	
+	double guess = 0;
 	tSpace.mapElements([&](double t, double index){
 		
 		// • use Newton's method to solve Kepler's equation
 		//   for ω(t). Tolerance 1e-5, max 6 iterations,
 		//   no output. Guess should be previous solution or
 		//   initially zero. (no global variables)
-		
-		double guess = 0;
 		
 		// Unary versions of f() and f'() for compatibility
 		// with newton(), which expects (double)->double.
@@ -84,6 +82,7 @@ int main(int argc, const char * argv[]) {
 		//   x(t) = r(ω) cos(ω) and y(t) = r(ω) sin(ω).
 		
 		double r_ω = r(ω, a, b);
+		
 		x_t[index] = r_ω * cos(ω);
 		y_t[index] = r_ω * sin(ω);
 		

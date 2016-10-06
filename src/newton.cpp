@@ -26,17 +26,23 @@ double newton(
 	//
 	//     x_n+1 = x_n - f(x_n) / df(x_n)
 	
+	double previous = x;
+	
 	for(size_t i = 0; i < maxit; ++i) {
 		
 		if(show_iterates) {
-			println("iterate",i,"of x =",x);
+			println("iteration",i,":");
+			println("      x =",x);
+			println("    |h| =", std::abs(previous-x));
+			println(" |f(x)| =", f(x));
 		}
 		
 		// if within tolerance, end iteration.
-		if(tol > std::abs(f(x)-0)) {
+		if(tol > std::abs(f(x)/df(x))) {
 			break;
 		}
 		
+		previous = x;
 		x = x - (f(x)/df(x));
 	}
 	

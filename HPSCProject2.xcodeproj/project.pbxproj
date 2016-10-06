@@ -10,6 +10,7 @@
 		2747EF861DA3E0EB0017A41E /* kepler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27D9E87F1DA2F30800AAB263 /* kepler.cpp */; };
 		2747EF891DA3EB1B0017A41E /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27EEB5F71D93541F00D90ECB /* Vector.cpp */; };
 		27658F671D945092009B34AF /* test_newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27658F651D945067009B34AF /* test_newton.cpp */; };
+		2787EC8E1DA5C88600EEDC52 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27EEB5F61D93541F00D90ECB /* Matrix.cpp */; };
 		27EEB5F91D93541F00D90ECB /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27EEB5F71D93541F00D90ECB /* Vector.cpp */; };
 		27EEB6021D93548C00D90ECB /* vandermonde.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27EEB6011D93548C00D90ECB /* vandermonde.cpp */; };
 /* End PBXBuildFile section */
@@ -255,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2787EC8E1DA5C88600EEDC52 /* Matrix.cpp in Sources */,
 				27EEB6021D93548C00D90ECB /* vandermonde.cpp in Sources */,
 				27EEB5F91D93541F00D90ECB /* Vector.cpp in Sources */,
 			);
@@ -410,6 +412,7 @@
 				2747EF851DA3E0D10017A41E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27658F601D94503A009B34AF /* Build configuration list for PBXNativeTarget "proj2_b" */ = {
 			isa = XCConfigurationList;

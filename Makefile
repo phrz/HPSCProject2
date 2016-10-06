@@ -77,7 +77,7 @@ data_c: $(TARGETC)
 # Reports                      #
 ################################
 
-all_reports: $(REPORT_A) $(REPORT_B)
+all_reports: $(REPORT)
 
 $(REPORT): all_data $(NOTEBOOK)
 	jupyter nbconvert --to pdf --execute $(NOTEBOOK) --output-dir $(ROOT)$(RP)
